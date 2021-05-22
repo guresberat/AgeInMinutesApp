@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AgeInMinutesApp</string>
+    <string name="app_name">Age In Minutes App</string>
     <string name="calculateYourText">Calculate Your</string>
     <string name="ageText">Age</string>
     <string name="inMinutesText">In Minutes</string>
