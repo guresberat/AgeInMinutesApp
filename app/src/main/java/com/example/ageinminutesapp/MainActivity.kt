@@ -26,17 +26,27 @@ class MainActivity : AppCompatActivity() {
         val month = myCalendar.get(Calendar.MONTH)
         val day = myCalendar.get(Calendar.DAY_OF_MONTH)
 
-        DatePickerDialog(
+        val dpd = DatePickerDialog(
             view.context,
             DatePickerDialog.OnDateSetListener { view, selectedYear, selectedMonth, selectedDayOfMonth ->
                 val selectedDate = "$selectedDayOfMonth/${selectedMonth + 1}/$selectedYear"
                 val tvSelectedDate = findViewById<TextView>(R.id.tvSelectedDate)
                 tvSelectedDate.text = selectedDate
+                val sdf= SimpleDateFormat("dd/MM/yyyy",Locale.ENGLISH)
+                val theDate = sdf.parse(selectedDate)
+                val selectedDateInMinutes = theDate!!.time / 60000
+                val currentDate = sdf.parse(sdf.format(System.currentTimeMillis()))
+                val currentDateToMinutes = currentDate!!.time / 60000
+                val differenceInMinutes = currentDateToMinutes - selectedDateInMinutes
+                val tvSelectedDateInMinutes = findViewById<TextView>(R.id.tvSelectedDateInMinutes)
+                tvSelectedDateInMinutes.text = differenceInMinutes.toString()
             },
             year,
             month,
             day
-        ).show()
+        )
+        dpd.datePicker.maxDate = Date().time - 8640000
+        dpd.show()
     }
 }
 
