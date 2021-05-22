@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">AgeInMinutesApp</string>
+    <string name="calculateYourText">Calculate Your</string>
+    <string name="ageText">Age</string>
+    <string name="inMinutesText">In Minutes</string>
+    <string name="selectDateText">Select Date</string>
+    <string name="selectedDateText">Selected Date</string>
+    <string name="ageInMinuteText">Age In Minutes</string>
+
 </resources>
