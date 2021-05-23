@@ -7,9 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="ageTextColor">#18CC0C</color>
-    <color name="ageTextBackGroundColor">#C00CCC</color>
-    <color name="textColor">#CC600C</color>
-    <color name="backgroundColor">#0c78cc</color>
+    <color name="ageTextColor">#3C153B</color>
+    <color name="ageTextBackGroundColor">#8B1E3F</color>
+    <color name="textColor">#DB4C40</color>
+    <color name="backgroundColor">#89BD9E</color>
     <color name="dimTextColor">#864d20</color>
+    <color name="selectDateBackGroundColor">#641A3D</color>
 </resources>

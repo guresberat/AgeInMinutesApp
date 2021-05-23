@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
                 val selectedDate = "$selectedDayOfMonth/${selectedMonth + 1}/$selectedYear"
                 val tvSelectedDate = findViewById<TextView>(R.id.tvSelectedDate)
                 tvSelectedDate.text = selectedDate
-                val sdf= SimpleDateFormat("dd/MM/yyyy",Locale.ENGLISH)
+                val sdf = SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH)
                 val theDate = sdf.parse(selectedDate)
                 val selectedDateInMinutes = theDate!!.time / 60000
                 val currentDate = sdf.parse(sdf.format(System.currentTimeMillis()))
