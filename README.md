@@ -1,8 +1,8 @@
 # AgeInMinutesApp
 
-An app that calculates how many minutes that you lived so far.
+- An app that calculates how many minutes that you lived so far.
 
-My first "app".
+My first "app".Made this app to experience and learn about whole process of app making.
 
 ## Built With 
 
